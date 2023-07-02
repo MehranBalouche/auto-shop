@@ -1,0 +1,517 @@
+/*  
+    text color   #A3A3A3
+    color green  #30BC55
+    border color #EBEBEB
+border color blue #C2D8F2           
+ nav 2   #FDFDFD
+
+*/
+@font-face {
+  font-family: "Roboto";
+  src: url(./fonts/RobotoFont/Roboto-Medium.ttf);
+}
+* {
+  font-family: "Roboto" !important;
+}
+.bg-f7 {
+  background-color: #f7f7f7;
+}
+.btn-green {
+  background-color: #30bc55;
+  color: #fff;
+}
+.btn-green:hover {
+  background-color: #30bc55;
+  color: #fff;
+}
+.fs-7 {
+  font-size: 0.8rem;
+}
+.form-select:focus,
+.form-select:focus-visible {
+  border-color: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.form-control:focus,
+.form-control:focus-visible {
+  border-color: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* ================ Navbar =>(nav menu) ==================== */
+
+.navbar-brand_img {
+  width: 60px;
+  height: 60px;
+}
+.navmenu-basket {
+  padding: 0 40px;
+  position: relative;
+  text-decoration: none;
+  color: #000;
+}
+.navmenu-basket svg {
+  width: 30px;
+  height: 30px;
+}
+.navmenu-basket-badge {
+  position: absolute;
+  top: -12px;
+  right: 25px;
+  font-size: 16px;
+  color: #fff;
+  background: #30bc55;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navmenu-currency {
+  white-space: nowrap;
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  padding: 2px 30px;
+  border-left: 2px solid #e2e2e2;
+  border-right: 2px solid #e2e2e2;
+  text-transform: uppercase;
+}
+.navmenu-currency::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+}
+.navmenu-language {
+  white-space: nowrap;
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  padding: 2px 30px;
+  text-transform: uppercase;
+}
+.navmenu-language::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+}
+@media only screen and (max-width: 768px) {
+  .navmenu-basket {
+    padding: 0 20px;
+    position: relative;
+    text-decoration: none;
+    color: #000;
+  }
+  .navmenu-basket svg {
+    width: 20px;
+    height: 20px;
+  }
+  .navmenu-basket-badge {
+    position: absolute;
+    top: -8px;
+    right: 30px;
+    font-size: 14px;
+    color: #fff;
+    background: #30bc55;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navmenu-currency {
+    white-space: nowrap;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    padding: 2px 20px;
+    border-left: 2px solid #e2e2e2;
+    border-right: 2px solid #e2e2e2;
+    text-transform: uppercase;
+  }
+  .navmenu-language {
+    white-space: nowrap;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    padding: 2px 20px;
+    text-transform: uppercase;
+  }
+}
+/* ================ Navbar =>(brand menu) ==================== */
+
+.navbrand {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbrand-logos {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-grow: 2;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+.navbrand-logo {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 0 1.2rem;
+  text-decoration: none;
+  color: #000;
+}
+.navbrand-logo_img {
+  height: 28px;
+  padding-right: 10px;
+}
+.navbrand-logo_name {
+  margin: 0;
+}
+.navbrand-more {
+  color: #000;
+  border-left: 1px solid;
+  min-width: 200px;
+  text-align: center;
+}
+.navbrand-more a {
+  min-width: 130px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #000;
+}
+.navbrand-more::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbrand-logo {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #000;
+  }
+  .navbrand-logo_name {
+    font-size: 15px;
+  }
+  .navbrand-more {
+    color: #000;
+    border-left: 1px solid;
+    min-width: 150px;
+    text-align: center;
+    font-size: 15px;
+  }
+}
+/* ================ Header ==================== */
+
+.header {
+  background: gray;
+  background-image: url(./../images/header/header-img-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.header-contents {
+  color: #fff;
+}
+.header-contents_title {
+  font-size: 50px;
+}
+.header-contents_text {
+  font-size: 16px;
+  width: 60%;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+.header-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-form_contents {
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  width: 100%;
+  border-radius: 10px;
+}
+.header-form_select {
+  position: relative;
+  flex: 1 1 auto;
+  width: 1%;
+  min-width: 200px;
+  outline: 0;
+  border: 0;
+  padding: 1.5rem 0.5rem;
+}
+.header-form_select option {
+  outline: 0;
+  border: 0;
+}
+.header-form_select_border {
+  border: 0;
+  border-radius: 10px 0 0 10px;
+}
+.header-form_btn {
+  border: 0;
+  background: #30bc55;
+  width: 66px;
+  border-radius: 0 10px 10px 0;
+  color: #fff;
+  font-size: 22px;
+}
+.header-form_btn:hover {
+  background: #2a9948;
+}
+
+@media only screen and (max-width: 768px) {
+  .header-contents_text {
+    font-size: 14px;
+    width: 100%;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* ================== payment-page =================== */
+/* payment informtion */
+
+.nav-custom {
+  background-color: #fafafa;
+}
+.nav-item-custom {
+  color: #00000095 !important;
+}
+.nav-link:focus,
+.nav-link:hover {
+  color: inherit !important;
+}
+.tab-content-custom {
+  border: 1px solid #dee2e6;
+  border-top: 0;
+}
+.form-check-input {
+  padding: 0;
+}
+.form-check-input:active {
+  filter: none !important;
+}
+.form-check-input:focus,
+.form-check-input:focus-visible {
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: none !important;
+}
+.form-check-input {
+  width: 1.3rem !important;
+  height: 1.3rem !important;
+}
+
+.form-check-input:checked,
+.form-check-input:focus,
+.form-check-input:focus-visible {
+  background-color: #fff;
+  border-color: #dee2e6;
+}
+.form-check-input:checked[type="checkbox"] {
+  background-image: url(./../images/svg.svg);
+}
+
+/* baskt card */
+.basket-card {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #ebebeb;
+  border-radius: 5px;
+  padding: 1rem;
+  width: 400px;
+}
+.basket-card-header {
+  border-bottom: 1px solid #ebebeb;
+  padding: 1rem 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.card-header_title {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.card-header_text {
+  color: #747474;
+  font-size: 14px;
+}
+.basket-card-body {
+}
+.card-body-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  margin-top: 1.5rem;
+}
+.card-body_img {
+  width: 90px !important;
+  height: 90px !important;
+}
+.card-body_pro_info {
+  padding-left: 10px;
+}
+.card-body_product_description {
+  height: 35px;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  line-height: 17px;
+}
+.card-body_text {
+  font-size: 13px;
+  color: #747474;
+  margin: 10px 0;
+}
+.card-body_price {
+}
+.card-body_discount {
+  text-decoration: line-through;
+  color: #747474;
+  font-size: 14px;
+}
+.card-body_main_price {
+  color: #30bc55;
+  font-weight: 700;
+  font-size: 18px;
+}
+.offercode {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  padding: 1rem 0;
+}
+.offercode input {
+  padding: 8px;
+  width: 75%;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  outline: none;
+}
+.offercode button {
+  padding: 9px;
+  width: 22%;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  background-color: #fafafa;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+.offercode button:hover {
+  background: #30bc55;
+}
+.basket-card-footer {
+  border-top: 1px solid #ebebeb;
+  padding-top: 1.3rem;
+}
+.card-footer_offer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #747474;
+}
+.card-footer_total {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #747474;
+}
+.card-footer_btn {
+  margin-top: 1.5rem;
+  width: 100%;
+  display: block;
+  height: 60px;
+  border: 0;
+  background: #30bc55;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: uppercase;
+}
+/* ------Footer----- */
+.pay-footer-section{
+  background-color: #FAFAFA;
+  padding-top: 8rem;
+}
+
+.pay-footer_title_one{
+  font-size: 40px;
+}
+.pay-footer_title_two{
+  font-size: 40px;
+  color: #30bc55;
+}
+.pay-footer_text{
+  width: 400px;
+  font-size: 15px;
+  text-align: center;
+  margin: 1rem auto;
+}
+.pay-footer-peymentway{
+  padding: 5rem 0 2rem 0;
+  text-align: center;
+}
+.pay-footer-peymentway_icon{
+  height: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+  opacity: 80%;
+}
+
+
+
+/* ====================footer-navbar======================== */
+.footer-navbar_brand{
+  display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer-navbar_brand p{
+  margin-left: 2rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+.footer-navbar_list{
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.footer-navbar_item{
+  margin: 0.4rem;
+}
+.footer-navbar_item a{
+  margin: 0.4rem;
+  color: #000;
+  text-decoration: none;
+}
