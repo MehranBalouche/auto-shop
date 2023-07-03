@@ -302,8 +302,13 @@ border color blue #C2D8F2
 .nav-custom {
   background-color: #fafafa;
 }
-.nav-item-custom {
-  color: #00000095 !important;
+.nav-link {
+  color: #000000;
+  /* padding: 1rem 1.5rem !important; */
+  border-radius: 0 !important;
+}
+.nav-item > .completed {
+  color: #30bc55 !important;
 }
 .nav-link:focus,
 .nav-link:hover {
@@ -339,6 +344,11 @@ border color blue #C2D8F2
 .form-check-input:checked[type="checkbox"] {
   background-image: url(./../images/svg.svg);
 }
+.pay-completed-icon {
+  font-size: 90px;
+  color: #30bc55;
+  padding-top: 3rem;
+}
 
 /* baskt card */
 .basket-card {
@@ -364,8 +374,6 @@ border color blue #C2D8F2
 .card-header_text {
   color: #747474;
   font-size: 14px;
-}
-.basket-card-body {
 }
 .card-body-content {
   display: flex;
@@ -393,8 +401,6 @@ border color blue #C2D8F2
   font-size: 13px;
   color: #747474;
   margin: 10px 0;
-}
-.card-body_price {
 }
 .card-body_discount {
   text-decoration: line-through;
@@ -459,58 +465,119 @@ border color blue #C2D8F2
   color: #fff;
   text-transform: uppercase;
 }
+@media only screen and (max-width: 425px) {
+  .basket-card {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #ebebeb;
+    border-radius: 5px;
+    padding: 0.5rem;
+    width: 100%;
+  }
+  .card-header_title {
+    font-size: 16px;
+    text-transform: capitalize;
+  }
+  .card-header_text {
+    color: #747474;
+    font-size: 12px;
+  }
+  .offercode button {
+    padding: 8px;
+    width: 22%;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    background-color: #fafafa;
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: all 0.3s;
+  }
+  .pay-footer-peymentway_icon {
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    opacity: 80%;
+    margin-top: 1rem;
+  }
+}
+
 /* ------Footer----- */
-.pay-footer-section{
-  background-color: #FAFAFA;
+.pay-footer-section {
+  background-color: #fafafa;
   padding-top: 8rem;
 }
 
-.pay-footer_title_one{
+.pay-footer_title_one {
   font-size: 40px;
 }
-.pay-footer_title_two{
+.pay-footer_title_two {
   font-size: 40px;
   color: #30bc55;
 }
-.pay-footer_text{
+.pay-footer_text {
   width: 400px;
   font-size: 15px;
   text-align: center;
   margin: 1rem auto;
 }
-.pay-footer-peymentway{
+.pay-footer-peymentway {
   padding: 5rem 0 2rem 0;
   text-align: center;
 }
-.pay-footer-peymentway_icon{
+.pay-footer-peymentway_icon {
   height: 40px;
   margin-left: 10px;
   margin-right: 10px;
   opacity: 80%;
 }
 
-
+@media only screen and (max-width: 562px) {
+  .pay-footer_title_one {
+    font-size: 30px;
+  }
+  .pay-footer_title_two {
+    font-size: 30px;
+    color: #30bc55;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .pay-footer_title_one {
+    font-size: 20px;
+  }
+  .pay-footer_title_two {
+    font-size: 20px;
+    color: #30bc55;
+  }
+  .pay-footer_text {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    margin: 1rem auto;
+  }
+}
 
 /* ====================footer-navbar======================== */
-.footer-navbar_brand{
+.footer-navbar_brand {
   display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.footer-navbar_brand p{
+.footer-navbar_brand p {
   margin-left: 2rem;
   margin-bottom: 0;
   font-size: 1rem;
 }
-.footer-navbar_list{
+.footer-navbar_list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   list-style: none;
 }
-.footer-navbar_item{
+.footer-navbar_item {
   margin: 0.4rem;
 }
-.footer-navbar_item a{
+.footer-navbar_item a {
   margin: 0.4rem;
   color: #000;
   text-decoration: none;

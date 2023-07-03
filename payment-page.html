@@ -178,12 +178,16 @@
     <section class="my-5">
       <div class="container">
         <div class="row flex-wrap">
-           <!-- Start payment section -->
-          <div class="col-md-8">
-            <ul class="nav nav-tabs nav-custom rounded-0" id="myTab" role="tablist">
+          <!-- Start payment section -->
+          <div class="col-lg-8">
+            <ul
+              class="nav nav-tabs nav-custom rounded-0"
+              id="myTab"
+              role="tablist"
+            >
               <li class="nav-item" role="presentation">
                 <button
-                  class="nav-link active py-3 px-4 nav-item-custom rounded-0"
+                  class="nav-link completed active py-3 px-4 rounded-0"
                   id="home-tab"
                   data-bs-toggle="tab"
                   data-bs-target="#home-tab-pane"
@@ -193,9 +197,10 @@
                   aria-selected="true"
                 >
                   <i class="bi bi-truck"></i> Delivery Information
+                  <i class="bi bi-check-circle-fill"></i>
                 </button>
               </li>
-              <li class="nav-item " role="presentation">
+              <li class="nav-item" role="presentation">
                 <button
                   class="nav-link py-3 px-4 nav-item-custom rounded-0"
                   id="profile-tab"
@@ -231,35 +236,67 @@
                 id="home-tab-pane"
                 role="tabpanel"
                 aria-labelledby="home-tab"
-                tabindex="0" >
+                tabindex="0"
+              >
                 <form action="">
                   <div class="container">
                     <div class="row pt-5">
-                      <p class="m-1"><span class="text-danger"> * </span> <span class="fs-7">Required fields</span></p>
+                      <p class="m-1">
+                        <span class="text-danger"> * </span>
+                        <span class="fs-7">Required fields</span>
+                      </p>
                       <div class="col">
-                        <input type="text" class="form-control rounded-0" placeholder="* Name" aria-label="First name">
+                        <input
+                          type="text"
+                          class="form-control rounded-0"
+                          placeholder="* Name"
+                          aria-label="First name"
+                        />
                       </div>
                       <div class="col">
-                        <input type="text" class="form-control rounded-0" placeholder="* Surname" aria-label="Last name">
+                        <input
+                          type="text"
+                          class="form-control rounded-0"
+                          placeholder="* Surname"
+                          aria-label="Last name"
+                        />
                       </div>
                     </div>
                     <div class="row py-3">
                       <div class="col">
-                        <input type="text" class="form-control rounded-0" placeholder="* Phone Number" aria-label="First name">
+                        <input
+                          type="text"
+                          class="form-control rounded-0"
+                          placeholder="* Phone Number"
+                          aria-label="First name"
+                        />
                       </div>
                       <div class="col">
-                        <input type="text" class="form-control rounded-0" placeholder="* Email" aria-label="Last name">
+                        <input
+                          type="text"
+                          class="form-control rounded-0"
+                          placeholder="* Email"
+                          aria-label="Last name"
+                        />
                       </div>
                     </div>
                     <div class="row pb-5">
                       <div class="col">
-                        <input type="text" class="form-control rounded-0" placeholder="* Address" aria-label="First name">
+                        <input
+                          type="text"
+                          class="form-control rounded-0"
+                          placeholder="* Address"
+                          aria-label="First name"
+                        />
                       </div>
                     </div>
                   </div>
                   <div class="container">
                     <div class="row pt-2">
-                      <p class="m-1"><span class="text-danger"> * </span> <span class="fs-7">Address Information</span></p>
+                      <p class="m-1">
+                        <span class="text-danger"> * </span>
+                        <span class="fs-7">Address Information</span>
+                      </p>
                       <div class="col">
                         <select class="form-select rounded-0">
                           <option value="0" selected>* City</option>
@@ -287,18 +324,30 @@
                         </select>
                       </div>
                       <div class="col">
-                        <input type="text" class="form-control rounded-0" placeholder="* Postal Code" aria-label="Last name">
+                        <input
+                          type="text"
+                          class="form-control rounded-0"
+                          placeholder="* Postal Code"
+                          aria-label="Last name"
+                        />
                       </div>
                     </div>
                     <div class="row py-5">
-                      <p class="fs-6 m-0">Your order will be prepared and shipped within <span class="fw-bold">2 business days</span>.</p>
-                      <p class="fs-6 m-0">The shipping time is <span class="fw-bold">2-3 working days</span>, will depend on the conditions of your country.</p>
+                      <p class="fs-6 m-0">
+                        Your order will be prepared and shipped within
+                        <span class="fw-bold">2 business days</span>.
+                      </p>
+                      <p class="fs-6 m-0">
+                        The shipping time is
+                        <span class="fw-bold">2-3 working days</span>, will
+                        depend on the conditions of your country.
+                      </p>
                     </div>
                   </div>
                 </form>
               </div>
-              
-              <!--   Payment -->    
+
+              <!--   Payment -->
               <div
                 class="tab-pane fade"
                 id="profile-tab-pane"
@@ -306,120 +355,191 @@
                 aria-labelledby="profile-tab"
                 tabindex="0"
               >
-              <form action="">
-                <div class="container">
-                  <div class="row pt-5 pb-3">
-                    <p class="m-1"><span class="text-danger"> * </span> <span class="fs-7">Required fields</span></p>
-                    <div class="col">
-                      <input type="text" class="form-control rounded-0" placeholder="* Name on the Card" aria-label="First name">
+                <form action="">
+                  <div class="container">
+                    <div class="row pt-5 pb-3">
+                      <p class="m-1">
+                        <span class="text-danger"> * </span>
+                        <span class="fs-7">Required fields</span>
+                      </p>
+                      <div class="col">
+                        <input
+                          type="text"
+                          class="form-control rounded-0"
+                          placeholder="* Name on the Card"
+                          aria-label="First name"
+                        />
+                      </div>
+                      <div class="col">
+                        <input
+                          type="text"
+                          class="form-control rounded-0"
+                          placeholder="* Card Number"
+                          aria-label="Last name"
+                        />
+                      </div>
                     </div>
-                    <div class="col">
-                      <input type="text" class="form-control rounded-0" placeholder="* Card Number" aria-label="Last name">
+                    <div class="row pb-5">
+                      <div class="col">
+                        <select class="form-select rounded-0">
+                          <option value="0" selected>* Month</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                      <div class="col">
+                        <select class="form-select rounded-0">
+                          <option value="0" selected>* Year</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                      <div class="col">
+                        <select class="form-select rounded-0">
+                          <option value="0" selected>* CVC</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row pt-4">
+                      <p>
+                        After entering the first
+                        <span class="fw-bold"
+                          >6 digits of your card, installment options will be
+                          displayed</span
+                        >.
+                      </p>
+                    </div>
+                    <div class="row ps-4 py-4">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label
+                          class="form-check-label ps-2"
+                          for="flexCheckDefault"
+                        >
+                          3D Secure
+                        </label>
+                      </div>
+                      <div class="form-check pt-2">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckChecked"
+                          checked
+                        />
+                        <label
+                          class="form-check-label ps-2 fw-bold"
+                          for="flexCheckChecked"
+                          checked
+                        >
+                          I have read the Distance Sales Contract, Right of
+                          Withdrawal and Preliminary Information Form.
+                        </label>
+                      </div>
                     </div>
                   </div>
-                  <div class="row pb-5">
-                    <div class="col">
-                      <select class="form-select rounded-0">
-                        <option value="0" selected>* Month</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-                    </div>
-                    <div class="col">
-                      <select class="form-select rounded-0">
-                        <option value="0" selected>* Year</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-                    </div>
-                    <div class="col">
-                      <select class="form-select rounded-0">
-                        <option value="0" selected>* CVC</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="row pt-4">
-                    <p>After entering the first <span class="fw-bold">6 digits of your card, installment options will be displayed</span>.</p>
-                  </div>
-                  <div class="row ps-4 py-4">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                      <label class="form-check-label ps-2" for="flexCheckDefault">
-                        3D Secure
-                      </label>
-                    </div>
-                    <div class="form-check pt-2">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                      <label class="form-check-label ps-2 fw-bold" for="flexCheckChecked" checked>
-                        I have read the Distance Sales Contract, Right of Withdrawal and Preliminary Information Form.
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                
-              </form>
+                </form>
               </div>
 
               <!--  Complete -->
               <div
-                class="tab-pane fade"
+                class="tab-pane fade text-center py-5"
                 id="contact-tab-pane"
                 role="tabpanel"
                 aria-labelledby="contact-tab"
                 tabindex="0"
               >
-              
+                <div class="pay-completed-icon">
+                  <i class="bi bi-check-circle-fill"></i>
+                </div>
+                <div class="fs-1">Your Order Successfully Created.</div>
+                <div class="fs-7">
+                  Your order has been created successfully. Your order
+                  information will be sent to your e-mail address.
+                </div>
+                <div class="fs-7">hifatihocak@gmail.com</div>
+                <div class="fs-7 mt-3">ORDER NO: 1027684698921938</div>
+                <div class="fs-7">PRODUCT COUNT: 2</div>
+                <div class="fs-7">TOTAL: $650.00</div>
               </div>
             </div>
           </div>
-           <!-- End payment Section -->
-           <!-- Start basket Section -->
+          <!-- End payment Section -->
+          <!-- Start basket Section -->
 
-          <div class="col-md-4">
-            <div class="basket-card">
+          <div class="col-lg-4 mt-3 mt-lg-0">
+            <div class="basket-card m-auto">
               <div class="basket-card-header">
                 <span class="card-header_title">Order Summary</span>
                 <span class="card-header_text">Total (3) Products</span>
               </div>
               <div class="basket-card-body">
                 <div class="card-body-content">
-                  <img class="card-body_img img-thumbnail rounded-0" src="./images/payment/proImage.png" alt="proImage">
+                  <img
+                    class="card-body_img img-thumbnail rounded-0"
+                    src="./images/payment/proImage.png"
+                    alt="proImage"
+                  />
                   <div class="card-body_pro_info">
-                    <p class="card-body_product_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis maximus justo, at bibendum erat congue nec. Aenean sed facilisis odio, non suscipit metus. Donec id accumsan quam. Fusce ultricies t</p>
+                    <p class="card-body_product_description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Pellentesque mollis maximus justo, at bibendum erat congue
+                      nec. Aenean sed facilisis odio, non suscipit metus. Donec
+                      id accumsan quam. Fusce ultricies t
+                    </p>
                     <p class="card-body_text">Basic</p>
                     <span class="card-body_discount"> $160.00 </span>&nbsp;
                     <span class="card-body_main_price"> $100.90 </span>
                   </div>
                 </div>
                 <div class="card-body-content">
-                  <img class="card-body_img img-thumbnail rounded-0" src="./images/payment/proImage.png" alt="proImage">
+                  <img
+                    class="card-body_img img-thumbnail rounded-0"
+                    src="./images/payment/proImage.png"
+                    alt="proImage"
+                  />
                   <div class="card-body_pro_info">
-                    <p class="card-body_product_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis maximus justo, at bibendum erat congue nec. Aenean sed facilisis odio, non suscipit metus. Donec id accumsan quam. Fusce ultricies t</p>
+                    <p class="card-body_product_description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Pellentesque mollis maximus justo, at bibendum erat congue
+                      nec. Aenean sed facilisis odio, non suscipit metus. Donec
+                      id accumsan quam. Fusce ultricies t
+                    </p>
                     <p class="card-body_text">Basic</p>
                     <span class="card-body_discount"> $160.00 </span>&nbsp;
                     <span class="card-body_main_price"> $100.90 </span>
                   </div>
                 </div>
                 <div class="offercode">
-                  <input type="text" placeholder="Coupon Code">
+                  <input type="text" placeholder="Coupon Code" />
                   <button type="button">APPLY</button>
                 </div>
               </div>
 
               <div class="basket-card-footer">
-                <div class="card-footer_offer"><span>Shipping Fee</span><span class="text-dark fw-bold"> $32.21 </span></div>
-                <div class="card-footer_total"><span>Total</span><span class="text-dark fw-bold"> $234.01 </span></div>
+                <div class="card-footer_offer">
+                  <span>Shipping Fee</span
+                  ><span class="text-dark fw-bold"> $32.21 </span>
+                </div>
+                <div class="card-footer_total">
+                  <span>Total</span
+                  ><span class="text-dark fw-bold"> $234.01 </span>
+                </div>
                 <button class="card-footer_btn" type="button">CONTINUE</button>
               </div>
             </div>
           </div>
-           <!-- End  basket Section -->
-
+          <!-- End  basket Section -->
         </div>
       </div>
     </section>
@@ -431,29 +551,52 @@
         <div class="row">
           <div class="text-center">
             <h3 class="pay-footer_title_one">Your Shopping Experience is</h3>
-            <h3 class="pay-footer_title_two">Easy and Extremely Safe <span class="fs-3">👍</span></h3>
+            <h3 class="pay-footer_title_two">
+              Easy and Extremely Safe <span class="fs-3">👍</span>
+            </h3>
             <p class="pay-footer_text">
-              There are no hidden charges or transaction fees for purchases made on our website; So you can shop easily.
+              There are no hidden charges or transaction fees for purchases made
+              on our website; So you can shop easily.
             </p>
           </div>
         </div>
         <div class="row">
           <div class="pay-footer-peymentway">
-            <img class="pay-footer-peymentway_icon" src="./images/peymentway/american-express.png" alt="icon">
-            <img class="pay-footer-peymentway_icon" src="./images/peymentway/maestro.png" alt="icon">
-            <img class="pay-footer-peymentway_icon" src="./images/peymentway/mastercard.png" alt="icon">
-            <img class="pay-footer-peymentway_icon" src="./images/peymentway/paypal.png" alt="icon">
-            <img class="pay-footer-peymentway_icon" src="./images/peymentway/visa.png" alt="icon">
+            <img
+              class="pay-footer-peymentway_icon"
+              src="./images/peymentway/american-express.png"
+              alt="icon"
+            />
+            <img
+              class="pay-footer-peymentway_icon"
+              src="./images/peymentway/maestro.png"
+              alt="icon"
+            />
+            <img
+              class="pay-footer-peymentway_icon"
+              src="./images/peymentway/mastercard.png"
+              alt="icon"
+            />
+            <img
+              class="pay-footer-peymentway_icon"
+              src="./images/peymentway/paypal.png"
+              alt="icon"
+            />
+            <img
+              class="pay-footer-peymentway_icon"
+              src="./images/peymentway/visa.png"
+              alt="icon"
+            />
           </div>
         </div>
       </div>
       <nav class="navbar border-top pb-3">
         <div class="container">
           <div class="footer-navbar_brand" href="#">
-            <img src="./images/bw.png" alt="logo" width="40" height="40">
+            <img src="./images/bw.png" alt="logo" width="40" height="40" />
             <p class="text-muted">© 2019 Lorum Ipsum All rights reserved</p>
           </div>
-          <ul class="footer-navbar_list">
+          <ul class="footer-navbar_list my-3">
             <li class="footer-navbar_item"><a href="">About Us</a></li>
             <li class="footer-navbar_item"><a href="">Comments</a></li>
             <li class="footer-navbar_item"><a href="">Media</a></li>
