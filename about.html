@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutoCar</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <!-- Bootstrap style link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap icon link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <!-- main(custom) style link -->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <!-- Start NavMenu ===== nav top for menu ========= -->
+
+    <nav class="navbar navbar-expand-lg flex-nowrap px-md-4 shadow-sm">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <a class="navbar-brand d-none d-lg-block" href="#"
+            ><img
+              class="navbar-brand_img"
+              src="./images/logo.png"
+              alt="barnd-_image"
+          /></a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item text-capitalize dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                About Us
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">another action</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item text-capitalize dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                product 1
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item text-capitalize dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Product 2
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item text-capitalize dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Comments
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item text-capitalize dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Media
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item text-capitalize dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Contact
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="d-flex align-items-center">
+        <a class="navmenu-basket" href="#"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="bi bi-bag-check"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"
+            />
+          </svg>
+          <span class="navmenu-basket-badge">4</span>
+        </a>
+        <a class="navmenu-currency" href="#">USD</a>
+        <a class="navmenu-language" href="#">EN</a>
+      </div>
+    </nav>
+
+    <!-- End NavMenu ===== nav top for menu ========= -->
+    <!-- Start Header ========= -->
+    <header class="search-navbar_bg py-3">
+      <div class="container">
+        <div class="search-navbar">
+          <div class="search-navbar-selectbox">
+            <select class="search-navbar-select">
+              <option class="search-navbar-select_option" value="" selected>
+                Select Vehicle Type
+              </option>
+              <option class="search-navbar-select_option" value="">one</option>
+              <option class="search-navbar-select_option" value="">tow</option>
+              <option class="search-navbar-select_option" value="">
+                three
+              </option>
+            </select>
+            <select class="search-navbar-select">
+              <option class="search-navbar-select_option" value="" selected>
+                Select Brsnd
+              </option>
+              <option class="search-navbar-select_option" value="">one</option>
+              <option class="search-navbar-select_option" value="">tow</option>
+              <option class="search-navbar-select_option" value="">
+                three
+              </option>
+            </select>
+            <select class="search-navbar-select">
+              <option class="search-navbar-select_option" value="" selected>
+                Select Model
+              </option>
+              <option class="search-navbar-select_option" value="">one</option>
+              <option class="search-navbar-select_option" value="">tow</option>
+              <option class="search-navbar-select_option" value="">
+                three
+              </option>
+            </select>
+            <select class="search-navbar-select">
+              <option class="search-navbar-select_option" value="" selected>
+                Select Year
+              </option>
+              <option class="search-navbar-select_option" value="">one</option>
+              <option class="search-navbar-select_option" value="">tow</option>
+              <option class="search-navbar-select_option" value="">
+                three
+              </option>
+            </select>
+          </div>
+          <div>
+            <button class="search-navbar-btn" type="button">
+              <i class="bi bi-search"></i> SEARCH
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header  ========= -->
+    <!-- End Header  ========= -->
+    <!-- End Header  ========= -->
+    <!-- =========== Start about =========== -->
+    <section class="support-section about-bg">
+      <div class="container">
+        <div class="row">
+          <nav aria-label="breadcrumb text-white">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item breadcrumb-item-custom">
+                <a href="#">Home</a>
+              </li>
+              <li class="breadcrumb-item text-white" aria-current="page">
+                About Us
+              </li>
+            </ol>
+          </nav>
+        </div>
+        <div class="row">
+          <div class="about-topic">About Us</div>
+        </div>
+      </div>
+    </section>
+    <!-- =========== End about =========== -->
+    <!-- =========== Start about contents =========== -->
+    <section class="bg-white">
+      <div class="container">
+        <div class="about-part">
+          <div class="row px-3">
+            <p class="mt-3">
+              Founded in 2008, Color Universe Drive has become a leader in the
+              car care chemicals sector thanks to its manufacturing technologies
+              and innovative product range. Today, the company sells its
+              patented products to many global companies in the Original
+              Equipment Manufacturers market and maintains its growth rate
+              through investments in sustainable production technologies, R & D
+              and human resources.
+            </p>
+            <p class="fs-7 mt-3">
+              Color Universe developed, patented and launched the world’s first
+              ‘self-apply’ touch-up paint technology, which is almost the same
+              quality as the original car paint.
+            </p>
+            <p class="fs-7 mt-3">
+              Color Universe is managed by experts and technology experts around
+              the world who are committed to car care chemicals and paints. We
+              are proud to partner with all the global paint manufacturers in
+              the automotive sector. Our success lies in our strong technology
+              and customer focus. Working closely with paint manufacturers, we
+              are constantly developing new touch-up paint systems with a focus
+              on development.
+            </p>
+            <p class="fs-7 mt-3">
+              We have a strong reputation for innovation, superior detailing
+              technology, quality and service. Our team members are in the EU
+              and the US for business development and sales support.
+            </p>
+            <p class="fs-7 mt-3">
+              Our technology provides unique and environmentally friendly
+              detailing solutions for perfect factory color matching and high
+              quality. In order to ensure color harmony and original factory
+              quality, we formulate our paints and chemicals with the most
+              advanced mixing processes. We achieved the balance between low
+              volatile organic compounds and high performance not only in our
+              touch-up paints, but also in our additives.
+            </p>
+          </div>
+          <div class="row mt-4">
+            <div class="cominfo-cards">
+              <div class="cominfo-card">
+                <div class="cominfo-card_icon"><i class="bi bi-geo"></i></div>
+                <div class="cominfo-card_text">
+                  Bürgermeister-Widmeierstr. 13 14179 Augsburg / Bavaria /
+                  Germany
+                </div>
+              </div>
+
+              <div class="cominfo-card">
+                <div class="cominfo-card_icon">
+                  <i class="bi bi-mailbox"></i>
+                </div>
+                <div class="cominfo-card_text">support@coloruniverse.com</div>
+              </div>
+
+              <div class="cominfo-card">
+                <div class="cominfo-card_icon">
+                  <i class="bi bi-telephone"></i>
+                </div>
+                <div class="cominfo-card_text">+49151472202353</div>
+              </div>
+
+              <div class="cominfo-card">
+                <div class="cominfo-card_icon">
+                  <i class="bi bi-exclamation-circle"></i>
+                </div>
+                <div class="cominfo-card_text">
+                  Registration Number: HRB 31088 Amtsgericht
+                </div>
+                <div class="cominfo-card_text">VAT Number: DE3095571413</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white mt-5">
+      <div class="container">
+        <div class="about-part">
+          <div class="row pt-5 justify-content-center">  
+            <div class="col-md-8 col-lg-6">
+              <h3 class="text-center text-capitalize">Our Business Partners</h3>
+              <p class="text-center mt-4">
+                We supply thousands of kilograms of raw materials and products.
+                All our suppliers must comply with our high procurement standards.
+                In this way, we ensure that we supply high quality raw materials
+                from first-class suppliers.
+              </p>
+            </div>
+          </div>
+          <div class="row pt-5 justify-content-center">
+            <div class="col-lg-6">
+              <div class="text-center">
+                <div class="about-two-icon"><i class="bi bi-exclamation-circle"></i></div>
+                <p class="about-two-text">Transport</p>
+                <div class="about-two-imgs">
+                  <img class="about-two-img" src="./images/about/TNT.png" alt="image">
+                  <img class="about-two-img" src="./images/about/4.png" alt="image">
+                  <img class="about-two-img" src="./images/about/2.png" alt="image">
+                  <img class="about-two-img" src="./images/about/3.png" alt="image">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 m-auto">
+              <div class="text-center about-two-border">
+                <div class="about-two-icon"><i class="bi bi-airplane"></i></div>
+                <p class="about-two-text">Chemistry</p>
+                <div class="about-two-imgs">
+                  <img class="about-two-img" src="./images/about/TNT.png" alt="image">
+                  <img class="about-two-img" src="./images/about/2.png" alt="image">
+                  <img class="about-two-img" src="./images/about/3.png" alt="image">
+                  <img class="about-two-img" src="./images/about/4.png" alt="image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========== End about contents=========== -->
+
+    <!-- =========== Start Footer  =========== -->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="row">
+          <div class="text-center">
+            <h3 class="footer_title_one">Your Shopping Experience is</h3>
+            <h3 class="footer_title_two">
+              Easy and Extremely Safe <span class="fs-3">👍</span>
+            </h3>
+            <p class="footer_text">
+              There are no hidden charges or transaction fees for purchases made
+              on our website; So you can shop easily.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="footer-peymentway">
+            <img
+              class="footer-peymentway_icon"
+              src="./images/peymentway/american-express.png"
+              alt="icon"
+            />
+            <img
+              class="footer-peymentway_icon"
+              src="./images/peymentway/maestro.png"
+              alt="icon"
+            />
+            <img
+              class="footer-peymentway_icon"
+              src="./images/peymentway/mastercard.png"
+              alt="icon"
+            />
+            <img
+              class="footer-peymentway_icon"
+              src="./images/peymentway/paypal.png"
+              alt="icon"
+            />
+            <img
+              class="footer-peymentway_icon"
+              src="./images/peymentway/visa.png"
+              alt="icon"
+            />
+          </div>
+        </div>
+      </div>
+      <nav class="navbar border-top">
+        <div class="container">
+          <div class="footer-navbar_brand" href="#">
+            <img src="./images/bw.png" alt="logo" width="40" height="40" />
+            <p class="text-muted">© 2019 Lorum Ipsum All rights reserved</p>
+          </div>
+          <ul class="footer-navbar_list my-3">
+            <li class="footer-navbar_item"><a href="">About Us</a></li>
+            <li class="footer-navbar_item"><a href="">Comments</a></li>
+            <li class="footer-navbar_item"><a href="">Media</a></li>
+            <li class="footer-navbar_item"><a href="">Support</a></li>
+            <li class="footer-navbar_item"><a href="">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <!-- =========== End Footer Section =========== -->
+
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- main (Custom) js -->
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>

@@ -27,6 +27,8 @@ border color blue #C2D8F2
 .fs-7 {
   font-size: 0.8rem;
 }
+
+/* ============ rewrite bootstrap class ============ */
 .form-select:focus,
 .form-select:focus-visible {
   border-color: none !important;
@@ -39,7 +41,24 @@ border color blue #C2D8F2
   outline: none !important;
   box-shadow: none !important;
 }
-
+.accordion-button:focus {
+  box-shadow: none;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  float: left;
+  color: #fff;
+  content: "/";
+}
+.accordion-button:not(.collapsed) {
+  background: none;
+}
+.accordion-button::after {
+  background-image: url(./../images/down-icon.svg);
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url(./../images/up-icon.svg);
+  transform: rotate(0deg);
+}
 /* ================ Navbar =>(nav menu) ==================== */
 
 .navbar-brand_img {
@@ -296,7 +315,384 @@ border color blue #C2D8F2
   }
 }
 
-/* ================== payment-page =================== */
+/* ================== Support =================== */
+.search-navbar_bg {
+  background-color: #30bc55;
+}
+.search-navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.search-navbar-select {
+  background-color: #21a243;
+  color: #fff;
+  padding: 0.5rem 0.8rem;
+  width: 180px;
+  margin-right: 0.2rem;
+  border: 1px solid #21a243;
+  border-radius: 3px;
+  outline: 0;
+  position: relative;
+}
+
+.search-navbar-select_option {
+  font-size: 1.2rem;
+}
+
+.search-navbar-btn {
+  color: #30bc55;
+  background: #fff;
+  width: 110px;
+  height: 40px;
+  border: 0;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 15px;
+  text-align: center;
+  transition: all 0.3s;
+}
+.search-navbar-btn:hover {
+  color: #fff;
+  background: #30bc55;
+  border: 1px solid #fff;
+}
+@media only screen and (max-width: 992px) {
+  .search-navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .search-navbar-selectbox {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .search-navbar-select {
+    background-color: #21a243;
+    color: #fff;
+    padding: 0.5rem 0.8rem;
+    width: 180px;
+    margin-right: 0.2rem;
+    border: 1px solid #21a243;
+    border-radius: 3px;
+    outline: 0;
+    position: relative;
+    margin-top: 1rem;
+  }
+  .search-navbar-btn {
+    color: #30bc55;
+    background: #fff;
+    width: 110px;
+    height: 40px;
+    border: 0;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 15px;
+    text-align: center;
+    transition: all 0.3s;
+    margin-top: 1rem;
+  }
+}
+/* support */
+.support-section {
+  height: 60vh;
+  padding-top: 1.5rem;
+}
+.support-bg {
+  background-color: #494949;
+  background-image: url(./../images/support-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.breadcrumb-item-custom a {
+  color: #fff;
+  opacity: 65%;
+  text-decoration: none;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  float: left;
+  color: #fff;
+  content: "/";
+}
+.support-topic {
+  color: #fff;
+  font-size: 40px;
+  width: 100px;
+  margin: 3.5rem auto;
+}
+/* cards */
+.support-cards {
+  border: 1px solid #ebebeb;
+  border-radius: 4px;
+  padding: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  top: -150px;
+  background: #fff;
+}
+.support-card {
+  text-align: center;
+  width: 280px;
+  border: 2px solid #ebebeb;
+  border-radius: 8px;
+  padding-bottom: 1rem;
+  margin: 1.5rem 0.2rem;
+}
+.support-card_icon {
+  color: #30bc55;
+  font-size: 6rem;
+}
+.support-card_title {
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+.support-card_text {
+  color: #30bc55;
+  font-size: 12px;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+/* Credit Cart */
+.credit-cart-bg {
+  background-color: #494949;
+  background-image: url(./../images/credit-cart-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.credit-cart-topic {
+  color: #fff;
+  font-size: 40px;
+  width: 250px;
+  margin: 3.5rem auto;
+}
+.credit-cart-accordion {
+  border: 1px solid #ebebeb;
+  padding: 1rem;
+  position: relative;
+  top: -90px;
+  background: #fff;
+  border-radius: 4px;
+}
+/* contact */
+
+.contact-bg {
+  background-color: #494949;
+  background-image: url(./../images/contact-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contact-topic {
+  color: #fff;
+  font-size: 40px;
+  width: 250px;
+  margin: 3.5rem auto;
+}
+.contact-form-part {
+  border: 1px solid #ebebeb;
+  padding: 1rem;
+  position: relative;
+  top: -90px;
+  background: #fff;
+  border-radius: 4px;
+}
+.contact-form-check-custom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact-form_btn {
+  width: 100px;
+  height: 35px;
+  border: 1px solid #30bc55;
+  border-radius: 3px;
+  background: #30bc55;
+  color: #fff;
+  margin-right: 1rem;
+  transition: all 0.3s;
+}
+.contact-form_btn:hover {
+  background: #fff;
+  color: #30bc55;
+}
+.cominfo-cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: space-evenly;
+}
+.cominfo-card {
+  width: 240px;
+  text-align: center;
+}
+.cominfo-card_icon {
+  font-size: 50px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: #30bc55;
+}
+.cominfo-card_text {
+  font-size: 13px;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-form-check-custom {
+    display: block;
+  }
+  .contact-form_btn {
+    width: 100px;
+    height: 35px;
+    border: 1px solid #30bc55;
+    border-radius: 3px;
+    background: #30bc55;
+    color: #fff;
+    margin-top: 2rem;
+    transition: all 0.3s;
+  }
+  .cominfo-card {
+    width: 180px;
+    text-align: center;
+  }
+  .cominfo-card_icon {
+    font-size: 35px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    color: #30bc55;
+  }
+}
+
+/* about */
+
+.about-bg {
+  background-color: #494949;
+  background-image: url(./../images/about-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-topic {
+  color: #fff;
+  font-size: 40px;
+  width: 240px;
+  margin: 3.5rem auto;
+}
+.about-part {
+  border: 1px solid #ebebeb;
+  padding: 1rem;
+  position: relative;
+  top: -90px;
+  background: #fff;
+  border-radius: 4px;
+}
+.about-two-icon {
+  font-size: 40px;
+  color: #30bc55;
+}
+.about-two-text {
+  font-size: 24px;
+  text-transform: capitalize;
+}
+.about-two-imgs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.about-two-img {
+  height: 30px;
+  max-width: 150px;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.about-two-border {
+  border-left: 1px solid #ebebeb;
+}
+@media only screen and (max-width: 992px) {
+  .about-two-border {
+    border-left: 0;
+  }
+}
+/* User Reviews */
+.user-reviews-bg {
+  background-color: #494949;
+  background-image: url(./../images/about-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.user-reviews-topic {
+  color: #fff;
+  font-size: 35px;
+  width: 250px;
+  margin: 3.5rem auto;
+}
+.user-reviews-part {
+  border: 1px solid #ebebeb;
+  padding: 1rem;
+  position: relative;
+  top: -90px;
+  background: #fff;
+  border-radius: 4px;
+}
+.user-review-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 95%;
+  margin: auto;
+  margin-top: 1rem;
+  border-radius: 4px;
+  padding: 2rem 1rem;
+  background: #30bc55;
+  background-image: url(./../images/user-review/map-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: darken;
+}
+.user-review-card-left {
+  max-width: 360px;
+  color: #fafafa;
+}
+.user-review-cards-right {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  color: #fafafa;
+}
+.user-review-card-right{
+  margin-left: 0.4rem;
+  margin-right: 0.4rem;
+}
+.user-review-card{
+  padding: 1rem;
+  text-align: center;
+}
+
+.user-review-img > img{
+  width: auto;
+  height: 25px;
+}
+.user-review-text{
+  font-size: 15px;
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+.user-review-stars{
+  font-size: 14px;
+  color: #EDBF00;
+}
 /* payment informtion */
 
 .nav-custom {
@@ -342,7 +738,7 @@ border color blue #C2D8F2
   border-color: #dee2e6;
 }
 .form-check-input:checked[type="checkbox"] {
-  background-image: url(./../images/svg.svg);
+  background-image: url(./../images/check.svg);
 }
 .pay-completed-icon {
   font-size: 90px;
@@ -501,30 +897,30 @@ border color blue #C2D8F2
   }
 }
 
-/* ------Footer----- */
-.pay-footer-section {
+/* ====================Footer========================= */
+.footer-section {
   background-color: #fafafa;
   padding-top: 8rem;
 }
 
-.pay-footer_title_one {
+.footer_title_one {
   font-size: 40px;
 }
-.pay-footer_title_two {
+.footer_title_two {
   font-size: 40px;
   color: #30bc55;
 }
-.pay-footer_text {
+.footer_text {
   width: 400px;
   font-size: 15px;
   text-align: center;
   margin: 1rem auto;
 }
-.pay-footer-peymentway {
+.footer-peymentway {
   padding: 5rem 0 2rem 0;
   text-align: center;
 }
-.pay-footer-peymentway_icon {
+.footer-peymentway_icon {
   height: 40px;
   margin-left: 10px;
   margin-right: 10px;
@@ -532,23 +928,23 @@ border color blue #C2D8F2
 }
 
 @media only screen and (max-width: 562px) {
-  .pay-footer_title_one {
+  .footer_title_one {
     font-size: 30px;
   }
-  .pay-footer_title_two {
+  .footer_title_two {
     font-size: 30px;
     color: #30bc55;
   }
 }
 @media only screen and (max-width: 425px) {
-  .pay-footer_title_one {
+  .footer_title_one {
     font-size: 20px;
   }
-  .pay-footer_title_two {
+  .footer_title_two {
     font-size: 20px;
     color: #30bc55;
   }
-  .pay-footer_text {
+  .footer_text {
     width: 100%;
     font-size: 14px;
     text-align: center;
@@ -556,7 +952,7 @@ border color blue #C2D8F2
   }
 }
 
-/* ====================footer-navbar======================== */
+/* ----------------footer-navbar-----------------*/
 .footer-navbar_brand {
   display: flex;
   align-items: center;

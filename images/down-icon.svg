@@ -1,0 +1,7 @@
+<svg id="Arrow_Button" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="Stroke" fill="none" stroke="#ebebeb" stroke-linejoin="round" stroke-width="2">
+    <circle cx="20" cy="20" r="20" stroke="none"/>
+    <circle cx="20" cy="20" r="19" fill="none"/>
+  </g>
+  <path id="Path_51008" data-name="Path 51008" d="M25.244,31.32a.789.789,0,0,0,.168-.846A.778.778,0,0,0,24.693,30H16.026a.775.775,0,0,0-.547,1.323l4.334,4.334a.782.782,0,0,0,1.1,0Z" transform="translate(0.044 -12.349)" fill="#30bc55"/>
+</svg>
