@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutoCar</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <!-- Bootstrap style link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap icon link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <!-- main(custom) style link -->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <!-- Start NavMenu ===== nav top for menu ========= -->
+
+    <nav class="navbar navbar-expand-lg flex-nowrap px-md-4 shadow-sm">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <a class="navbar-brand d-none d-lg-block" href="#"
+            ><img
+              class="navbar-brand_img"
+              src="./images/logo.png"
+              alt="barnd-_image"
+          /></a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item text-capitalize dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                About Us
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">another action</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item text-capitalize dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                product 1
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item text-capitalize dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Product 2
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item text-capitalize dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Comments
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item text-capitalize dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Media
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item text-capitalize dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Contact
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="d-flex align-items-center">
+        <a class="navmenu-basket" href="#"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="bi bi-bag-check"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"
+            />
+          </svg>
+          <span class="navmenu-basket-badge">4</span>
+        </a>
+        <a class="navmenu-currency" href="#">USD</a>
+        <a class="navmenu-language" href="#">EN</a>
+      </div>
+    </nav>
+
+    <!-- End NavMenu ===== nav top for menu ========= -->
+    <!-- Start Header  -->
+    <header class="search-navbar_bg py-3">
+      <div class="container">
+        <div class="search-navbar">
+          <div class="search-navbar-selectbox">
+            <select class="search-navbar-select">
+              <option class="search-navbar-select_option" value="" selected>
+                Select Vehicle Type
+              </option>
+              <option class="search-navbar-select_option" value="">one</option>
+              <option class="search-navbar-select_option" value="">tow</option>
+              <option class="search-navbar-select_option" value="">
+                three
+              </option>
+            </select>
+            <select class="search-navbar-select">
+              <option class="search-navbar-select_option" value="" selected>
+                Select Brsnd
+              </option>
+              <option class="search-navbar-select_option" value="">one</option>
+              <option class="search-navbar-select_option" value="">tow</option>
+              <option class="search-navbar-select_option" value="">
+                three
+              </option>
+            </select>
+            <select class="search-navbar-select">
+              <option class="search-navbar-select_option" value="" selected>
+                Select Model
+              </option>
+              <option class="search-navbar-select_option" value="">one</option>
+              <option class="search-navbar-select_option" value="">tow</option>
+              <option class="search-navbar-select_option" value="">
+                three
+              </option>
+            </select>
+            <select class="search-navbar-select">
+              <option class="search-navbar-select_option" value="" selected>
+                Select Year
+              </option>
+              <option class="search-navbar-select_option" value="">one</option>
+              <option class="search-navbar-select_option" value="">tow</option>
+              <option class="search-navbar-select_option" value="">
+                three
+              </option>
+            </select>
+          </div>
+          <div>
+            <button class="search-navbar-btn" type="button">
+              <i class="bi bi-search"></i> SEARCH
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header   -->
+    <!-- Start product Details secrtion   -->
+    <section>
+      <div class="container">
+        <div class="row mt-3">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item breadcrumb-item-custom">
+                <a href="#">Home</a>
+              </li>
+              <li class="breadcrumb-item breadcrumb-item-custom">
+                <a href="#">All Brands</a>
+              </li>
+              <li class="breadcrumb-item breadcrumb-item-custom">
+                <a href="#">Mercedes</a>
+              </li>
+              <li
+                class="breadcrumb-item breadcrumb-item-custom active"
+                aria-current="page"
+              >
+                Mercedes-AMG GT R Coupé
+              </li>
+            </ol>
+          </nav>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-5">
+            <img
+              class="img-fluid"
+              src="./images/product-detail/product-image.png"
+              alt="product-image"
+            />
+          </div>
+          <div class="col-md-7">
+            <div>
+              <i class="bi bi-star-fill starcolor"></i
+              ><i class="bi bi-star-fill starcolor"></i
+              ><i class="bi bi-star-fill starcolor"></i
+              ><i class="bi bi-star-fill starcolor"></i
+              ><i class="bi bi-star-fill starcolor"></i>
+              <span class="px-3 fs-7 text-muted"> 15 User Comments</span>
+            </div>
+            <div class="pro-title">Mercedes-AMG GT R Coupé</div>
+            <div class="pro-description">
+              German Touch-up Kit to cover stone tracks and scratches in your
+              vehicle
+            </div>
+            <div>
+              <span class="text-muted text-decoration-line-through"
+                >$149,00 </span
+              >&nbsp;<span class="text-green fs-5"> $89,00</span>
+            </div>
+
+            <div class="mt-4">
+              <p class="text-muted fs-6 m-0">Select Package:</p>
+              <div class="package-pro-boxs">
+                <div class="package-pro-box">
+                  <p class="package-pro-name">STANDART</p>
+                  <div>
+                    <span class="package-pro-discount">$199,00 </span>&nbsp;<span
+                      class="package-pro-price"
+                    >
+                      $109,00</span
+                    >
+                  </div>
+                </div>
+                <div class="package-pro-box">
+                  <p class="package-pro-name">platinum</p>
+                  <div>
+                    <span class="package-pro-discount">$199,00 </span>&nbsp;<span
+                      class="package-pro-price"
+                    >
+                      $109,00</span
+                    >
+                  </div>
+                </div>
+                <div class="package-pro-box box-selected">
+                  <p class="package-pro-name">GOLD</p>
+                  <div>
+                    <span class="package-pro-discount">$199,00 </span>&nbsp;<span
+                      class="package-pro-price"
+                    >
+                      $109,00</span
+                    >
+                  </div>
+                </div>
+                <div class="package-pro-box">
+                  <p class="package-pro-name">ALL PACK</p>
+                  <div>
+                    <span class="package-pro-discount">$199,00</span>&nbsp;<span
+                      class="package-pro-price"
+                    >
+                      $109,00</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="select-color">
+              
+              <div class="select-color-text">Change Color</div>
+              <div class="dropdown d-flex align-items-center">
+                  <div class="color-selected-box"></div>
+                  <button class=" select-color-menu" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Estoril Green Met B45
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">green</a></li>
+                  </ul>
+                </div>
+
+            </div>
+            <div class="pro-btns">
+              <button class="pro-btn_share" type="button"><i class="bi bi-share-fill"></i> Share</button>
+              <div class="pro-btns-count"><button class="pro-btns-count_btn" type="button"><i class="bi bi-dash"></i></button><div class="px-2">01</div><button class="pro-btns-count_btn" type="button"><i class="bi bi-plus"></i></button></div>
+              <button class="pro-btn_addtocard" type="button">add to cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="tab-content-part">
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-product-tab" data-bs-toggle="tab" data-bs-target="#nav-product" type="button" role="tab" aria-controls="nav-product" aria-selected="true">Product description</button>
+                <button class="nav-link" id="nav-package-tab" data-bs-toggle="tab" data-bs-target="#nav-package" type="button" role="tab" aria-controls="nav-package" aria-selected="false">Package Included</button>
+                <button class="nav-link" id="nav-compatible-tab" data-bs-toggle="tab" data-bs-target="#nav-compatible" type="button" role="tab" aria-controls="nav-compatible" aria-selected="false">Compatible Models</button>
+                <button class="nav-link" id="nav-application-tab" data-bs-toggle="tab" data-bs-target="#nav-application" type="button" role="tab" aria-controls="nav-application" aria-selected="false">application Videos</button>
+                <button class="nav-link" id="nav-shipping-tab" data-bs-toggle="tab" data-bs-target="#nav-shipping" type="button" role="tab" aria-controls="nav-shipping" aria-selected="false">Shipping / Payment</button>
+                <button class="nav-link" id="nav-comments-tab" data-bs-toggle="tab" data-bs-target="#nav-comments" type="button" role="tab" aria-controls="nav-comments" aria-selected="false">Comments (7)</button>
+                <button class="nav-link" id="nav-asked-tab" data-bs-toggle="tab" data-bs-target="#nav-asked" type="button" role="tab" aria-controls="nav-asked" aria-selected="false">Asked Questions</button>
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-product" role="tabpanel" aria-labelledby="nav-product-tab" tabindex="0">
+                
+                <div class="nav-pro-info">
+                  <div><span class="nav-pro-info_key">Color Name: </span><span class="nav-pro-info_value"> ESTORIL Green MET</span></div>
+                  <div><span class="nav-pro-info_key">Color Code: </span><span class="nav-pro-info_value"> B45</span></div>
+                  <div><span class="nav-pro-info_key">Package: </span><span class="nav-pro-info_value"> Gold</span></div>
+                  <div><span class="nav-pro-info_key">SKU: </span><span class="nav-pro-info_value"> CND-BSC-000233-010447</span></div>
+                  <div><span class="nav-pro-info_key">EAN: </span><span class="nav-pro-info_value"> 7091196556818</span></div>
+                </div>
+
+                <div class="row justify-content-center mt-5">
+                  <div class="col-md-6 col-lg-4">
+                    <div class="pro-des-topic">
+                      <div class="text-green">Mercedes-AMG GT R Coupé</div>
+                      <div>Estoril Green B45 Paint</div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-7">
+                    <div class="pro-des-text">
+                      <p  class="fs-6 fw-bold">Automobiles, which play an important role in meeting the needs of transportation and cargo transportation in daily life, should not be neglected for cleaning and maintenance. In addition, the aesthetic stance and appearance of the cars are at least as important as their cleaning and maintenance.</p>
+                      <p class="fs-6 ">However, the coatings applied for the protection of the exterior paint of the vehicles, as a result of seasonal changes and water contact with time, disappear, while the small pieces of stone from the vehicles in motion while the front of the hood used to remove the color of the front guards, depending on the temperature changes on the hood can change.</p>
+                      <p class="fs-6 ">However, the coatings applied for the protection of the exterior paint of the vehicles, as a result of seasonal changes and water contact with time, disappear, while the small pieces of stone from the vehicles in motion while the front of the hood used to remove the color of the front guards, depending on the temperature changes on the hood can change.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row justify-content-center mt-5 px-3">
+                  <img class="img-fluid" src="./images/product-detail/larg-img.png" alt="image">
+                </div>
+                <div class="row justify-content-center mt-5">
+                  <div class="col-md-6 col-lg-4">
+                    <div class="pro-des-topic">
+                      <div class="text-green">Perfect Look with</div>
+                      <div>Color Universe</div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-7">
+                    <div class="pro-des-text">
+                      <p  class="fs-6 fw-bold">Automobiles, which play an important role in meeting the needs of transportation and cargo transportation in daily life, should not be neglected for cleaning and maintenance. In addition, the aesthetic stance and appearance of the cars are at least as important as their cleaning and maintenance.</p>
+                      <p class="fs-6 ">However, the coatings applied for the protection of the exterior paint of the vehicles, as a result of seasonal changes and water contact with time, disappear, while the small pieces of stone from the vehicles in motion while the front of the hood used to remove the color of the front guards, depending on the temperature changes on the hood can change.</p>
+                      <p class="fs-6 ">However, the coatings applied for the protection of the exterior paint of the vehicles, as a result of seasonal changes and water contact with time, disappear, while the small pieces of stone from the vehicles in motion while the front of the hood used to remove the color of the front guards, depending on the temperature changes on the hood can change.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row justify-content-center my-5 px-3">
+                  <img class="img-fluid" src="./images/product-detail/larg-img2.png" alt="image">
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nav-package" role="tabpanel" aria-labelledby="nav-package-tab" tabindex="0">Package Included</div>
+              <div class="tab-pane fade" id="nav-compatible" role="tabpanel" aria-labelledby="nav-compatible-tab" tabindex="0">Compatible Models</div>
+              <div class="tab-pane fade" id="nav-application" role="tabpanel" aria-labelledby="nav-application-tab" tabindex="0">Application Videos</div>
+              <div class="tab-pane fade" id="nav-shipping" role="tabpanel" aria-labelledby="nav-shipping-tab" tabindex="0">Shipping / Payment</div>
+              <div class="tab-pane fade" id="nav-comments" role="tabpanel" aria-labelledby="nav-comments-tab" tabindex="0">Comments (7)</div>
+              <div class="tab-pane fade" id="nav-asked" role="tabpanel" aria-labelledby="nav-asked-tab" tabindex="0">Asked Questions</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End product Details secrtion -->
+
+    <!-- =========== Start Footer  =========== -->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="row">
+          <div class="text-center">
+            <h3 class="footer_title_one">Your Shopping Experience is</h3>
+            <h3 class="footer_title_two">
+              Easy and Extremely Safe <span class="fs-3">👍</span>
+            </h3>
+            <p class="footer_text">
+              There are no hidden charges or transaction fees for purchases made
+              on our website; So you can shop easily.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="footer-peymentway">
+            <img
+              class="footer-peymentway_icon"
+              src="./images/peymentway/american-express.png"
+              alt="icon"
+            />
+            <img
+              class="footer-peymentway_icon"
+              src="./images/peymentway/maestro.png"
+              alt="icon"
+            />
+            <img
+              class="footer-peymentway_icon"
+              src="./images/peymentway/mastercard.png"
+              alt="icon"
+            />
+            <img
+              class="footer-peymentway_icon"
+              src="./images/peymentway/paypal.png"
+              alt="icon"
+            />
+            <img
+              class="footer-peymentway_icon"
+              src="./images/peymentway/visa.png"
+              alt="icon"
+            />
+          </div>
+        </div>
+      </div>
+      <nav class="navbar border-top">
+        <div class="container">
+          <div class="footer-navbar_brand" href="#">
+            <img src="./images/bw.png" alt="logo" width="40" height="40" />
+            <p class="text-muted">© 2019 Lorum Ipsum All rights reserved</p>
+          </div>
+          <ul class="footer-navbar_list my-3">
+            <li class="footer-navbar_item"><a href="">About Us</a></li>
+            <li class="footer-navbar_item"><a href="">Comments</a></li>
+            <li class="footer-navbar_item"><a href="">Media</a></li>
+            <li class="footer-navbar_item"><a href="">Support</a></li>
+            <li class="footer-navbar_item"><a href="">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <!-- =========== End Footer Section =========== -->
+
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- main (Custom) js -->
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
