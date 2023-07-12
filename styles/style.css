@@ -28,7 +28,7 @@ border color blue #C2D8F2
   font-size: 0.8rem;
 }
 .text-green {
-  color: #30bc55;
+  color: #30bc55!important;
 }
 .text-bg-green {
   background-color: #30bc55;
@@ -90,6 +90,11 @@ border color blue #C2D8F2
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
   color: #30bc55 !important;
+}
+.btn-close:focus, .btn-close:focus-visible {
+  outline: 0;
+  box-shadow: none;
+  opacity: none;
 }
 /* ================ Navbar =>(nav menu) ==================== */
 
@@ -473,6 +478,103 @@ border color blue #C2D8F2
   background: #747474;
   border-radius: 25px;
 }
+/* feedback part */
+.feed-carousel-indicators {
+  width: 100px;
+  border-right: 2px solid #212121;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.feed-carousel-indicator {
+  background: #212121;
+  width: 3px;
+  height: 20px;
+  border: none;
+  transform: rotate(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+.feed-carousel-indicator-arrow {
+  color: #212121;
+  background: transparent;
+  border: none;
+  font-size: 30px;
+}
+.indicator-active {
+  background: #30bc55;
+}
+.indicator-arrow-active {
+  color: #30bc55;
+}
+.feedback-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fafafa;
+  margin: 0;
+}
+.feedback-card {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.feedback-card-content {
+  display: flex;
+  align-items: flex-start;
+}
+.feedback-card-img {
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+}
+.feedback-card-name {
+  font-size: 18px;
+  color: #fafafa;
+  text-transform: capitalize;
+}
+.feedback-card-jobname {
+  font-size: 18px;
+  color: #747474;
+  text-transform: capitalize;
+}
+.feedback-description {
+  width: 300px;
+  height: 100px;
+  text-align: justify;
+  color: #747474;
+  margin-top: 1rem;
+  overflow: hidden;
+}
+.feedback-link {
+  color: #fafafa;
+  text-decoration: none;
+}
+.feed-img{
+  width: 100%;
+  height: -webkit-fill-available;
+}
+.offcanvas-btn-close{
+  margin-right: 1rem;
+    border: 1px solid #747474;
+    border-radius: 100%;
+    padding: 0.5rem;
+}
+@media only screen and (max-width: 768px) {
+  .feedback-description {
+    max-width: 100%;
+    height: 100px;
+    text-align: justify;
+    color: #747474;
+    margin-top: 1rem;
+    overflow: hidden;
+  }
+}
+
+
 /* ================== Support =================== */
 .search-navbar_bg {
   background-color: #30bc55;
