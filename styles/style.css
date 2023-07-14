@@ -28,7 +28,7 @@ border color blue #C2D8F2
   font-size: 0.8rem;
 }
 .text-green {
-  color: #30bc55!important;
+  color: #30bc55 !important;
 }
 .text-bg-green {
   background-color: #30bc55;
@@ -91,11 +91,13 @@ border color blue #C2D8F2
 .nav-tabs .nav-link.active {
   color: #30bc55 !important;
 }
-.btn-close:focus, .btn-close:focus-visible {
+.btn-close:focus,
+.btn-close:focus-visible {
   outline: 0;
   box-shadow: none;
   opacity: none;
 }
+
 /* ================ Navbar =>(nav menu) ==================== */
 
 .navbar-brand_img {
@@ -260,8 +262,50 @@ border color blue #C2D8F2
   border-right: 0.3em solid transparent;
   border-bottom: 0;
   border-left: 0.3em solid transparent;
+  color: #30bc55;
 }
 
+.dropdown-menu-lang {
+  position: absolute !important;
+  top: 53px !important;
+  left: -140px !important;
+  border-radius: 1px;
+  width: 240px;
+  padding: 0.5rem;
+}
+.active-lang-menu{
+  position: absolute;
+  top: -4px;
+  right: 37px;
+  width: 35px;
+  height: 4px;
+  background-color: #30bc55;
+  border-radius: 2px;
+}
+.lang-menu-left {
+  width: 100px;
+  border-right: 1px solid #dee2e6;
+  text-align: center;
+}
+.lang-menu-right {
+  width: 100px;
+  text-align: center;
+}
+.lang-item{
+  position: relative;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.lang-selected {
+  position: absolute;
+  right: 15px;
+  top: 8px;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: green;
+  border-radius: 100%;
+}
 @media only screen and (max-width: 768px) {
   .navbrand-logo {
     display: flex;
@@ -341,6 +385,65 @@ border color blue #C2D8F2
 }
 .header-form_btn:hover {
   background: #2a9948;
+}
+.header-selects{
+  background: #fafafa;
+  border-radius: 10px;
+  display: flex;
+}
+.header-select{
+  position: relative;
+  margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.header-select button{
+  border: 0;
+  background: inherit;
+  border-right: 1px solid #dee2e6;
+  margin-right: 2rem;
+}
+
+.header-select button:hover{
+  color: #30bc55;
+}
+.header-select button i{
+margin-left: 5rem;
+}
+.header-btn{
+  font-size: 28px;
+  background-color: #30bc55;
+  border: 0;
+  border-radius: 0 10px 10px 0;
+  color: #fff;
+  padding: 0 1rem;
+}
+.header-select-option{
+  display: none;
+  position: absolute;
+  background: #fafafa;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+}
+.header-select-option-item{
+margin: 0.5rem 1.5rem;
+}
+.header-select-option-item a{
+  color: #000;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.header-select-option-link{
+  border-top: 1px solid #dee2e6;
+  display: block;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+  padding: 0.7rem 0;
+  transition: all 0.3s;
+}
+.header-select:hover  .header-select-option{
+  display: block;
 }
 .header-mail-btn {
   position: absolute;
@@ -553,16 +656,17 @@ border color blue #C2D8F2
   color: #fafafa;
   text-decoration: none;
 }
-.feed-img{
+.feed-img {
   width: 100%;
   height: -webkit-fill-available;
 }
-.offcanvas-btn-close{
+.offcanvas-btn-close {
   margin-right: 1rem;
-    border: 1px solid #747474;
-    border-radius: 100%;
-    padding: 0.5rem;
+  border: 1px solid #747474;
+  border-radius: 100%;
+  padding: 0.5rem;
 }
+
 @media only screen and (max-width: 768px) {
   .feedback-description {
     max-width: 100%;
@@ -573,7 +677,6 @@ border color blue #C2D8F2
     overflow: hidden;
   }
 }
-
 
 /* ================== Support =================== */
 .search-navbar_bg {

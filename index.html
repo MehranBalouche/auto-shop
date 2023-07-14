@@ -36,15 +36,17 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand d-none d-lg-block" href="#">
+        <a class="navbar-brand d-none d-lg-block ps-3" href="#">
           <img src="./images/logo.png" alt="Bootstrap" width="40" height="40" />
         </a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">About Us</a>
+              <a class="nav-link active" aria-current="page" href="#"
+                >About Us</a
+              >
             </li>
-            
+
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -111,7 +113,12 @@
           </ul>
         </div>
         <div class="d-flex" role="search">
-          <a class="navmenu-basket" data-bs-toggle="offcanvas" href="#offcanvasbasket" role="button" aria-controls="offcanvasExample"
+          <a
+            class="navmenu-basket"
+            data-bs-toggle="offcanvas"
+            href="#offcanvasbasket"
+            role="button"
+            aria-controls="offcanvasExample"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
@@ -124,35 +131,78 @@
             </svg>
             <span class="navmenu-basket-badge">4</span>
           </a>
-          <a class="navmenu-currency" data-bs-toggle="offcanvas" href="#offcanvasusd" role="button" aria-controls="offcanvasExample">USD</a>
+          <a class="navmenu-currency">USD</a>
           <div class="dropdown">
-            <a href="#" class="navmenu-language dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">EN</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <a
+              href="#"
+              class="navmenu-language dropdown-toggle"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >EN</a
+            >
+            <ul class="dropdown-menu dropdown-menu-lang">
+              <div class="active-lang-menu"></div>
+              <p class="m-0 fs-6 fw-bold text-capitalize">Select Language</p>
+              <p class="fs-7">
+                You can choose your language according to the country language
+                and continue your shopping experience easily.
+              </p>
+              <div class="d-flex justify-content-around">
+                <div class="lang-menu-left">
+                  <div class="lang-item">TR</div>
+                  <div class="lang-item">DE</div>
+                  <div class="lang-item">ES</div>
+                  <div class="lang-item">FR</div>
+                  <div class="lang-item">GB</div>
+                  <div class="lang-item">IT</div>
+                </div>
+                <div class="lang-menu-right">
+                  <div class="lang-item">NZ</div>
+                  <div class="lang-item">PH</div>
+                  <div class="lang-item">SG</div>
+                  <div class="lang-item">
+                    US <span class="lang-selected"></span>
+                  </div>
+                  <div class="lang-item">AU</div>
+                  <div class="lang-item">ZA</div>
+                </div>
+              </div>
             </ul>
           </div>
         </div>
       </div>
     </nav>
-    <!--Start OffCanvas -->
-    <!-- basket -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasbasket" aria-labelledby="offcanvasExampleLabel">
+    <!--Start OffCanvas basket-->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasbasket"
+      aria-labelledby="offcanvasExampleLabel"
+    >
       <div class="py-1 px-3">
         <div class="basket-card-header">
           <span class="card-header_title">My shopping Cart</span>
-          <button type="button" class="btn-close offcanvas-btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <button
+            type="button"
+            class="btn-close offcanvas-btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
         </div>
         <div class="basket-card-body">
           <div class="card-body-content">
-            <img class="card-body_img img-thumbnail rounded-0" src="./images/payment/proImage.png" alt="proImage">
+            <img
+              class="card-body_img img-thumbnail rounded-0"
+              src="./images/payment/proImage.png"
+              alt="proImage"
+            />
             <div class="card-body_pro_info">
               <p class="card-body_product_description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Pellentesque mollis maximus justo, at bibendum erat congue
-                nec. Aenean sed facilisis odio, non suscipit metus. Donec
-                id accumsan quam. Fusce ultricies t
+                Pellentesque mollis maximus justo, at bibendum erat congue nec.
+                Aenean sed facilisis odio, non suscipit metus. Donec id accumsan
+                quam. Fusce ultricies t
               </p>
               <p class="card-body_text">Basic</p>
               <span class="card-body_discount"> $160.00 </span>&nbsp;
@@ -160,13 +210,17 @@
             </div>
           </div>
           <div class="card-body-content">
-            <img class="card-body_img img-thumbnail rounded-0" src="./images/payment/proImage.png" alt="proImage">
+            <img
+              class="card-body_img img-thumbnail rounded-0"
+              src="./images/payment/proImage.png"
+              alt="proImage"
+            />
             <div class="card-body_pro_info">
               <p class="card-body_product_description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Pellentesque mollis maximus justo, at bibendum erat congue
-                nec. Aenean sed facilisis odio, non suscipit metus. Donec
-                id accumsan quam. Fusce ultricies t
+                Pellentesque mollis maximus justo, at bibendum erat congue nec.
+                Aenean sed facilisis odio, non suscipit metus. Donec id accumsan
+                quam. Fusce ultricies t
               </p>
               <p class="card-body_text">Basic</p>
               <span class="card-body_discount"> $160.00 </span>&nbsp;
@@ -174,14 +228,15 @@
             </div>
           </div>
           <div class="offercode">
-            <input type="text" placeholder="Coupon Code">
+            <input type="text" placeholder="Coupon Code" />
             <button type="button">APPLY</button>
           </div>
         </div>
 
         <div class="basket-card-footer">
           <div class="card-footer_offer">
-            <span>Shipping Fee</span><span class="text-dark fw-bold"> $32.21 </span>
+            <span>Shipping Fee</span
+            ><span class="text-dark fw-bold"> $32.21 </span>
           </div>
           <div class="card-footer_total">
             <span>Total</span><span class="text-dark fw-bold"> $234.01 </span>
@@ -190,29 +245,6 @@
         </div>
       </div>
     </div>
-    <!-- USD -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasusd" aria-labelledby="offcanvasExampleLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <div>
-          Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-        </div>
-        <div class="dropdown mt-3">
-          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-            Dropdown button
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
     <!--End OffCanvas -->
     <!-- End NavMenu ===== nav top for menu ========= -->
     <!-- Start Nav Brand ===== nav top for auto Brand ========= -->
@@ -287,50 +319,56 @@
             </div>
 
             <form class="header-form mt-3 mt-md-5">
-              <div class="input-group mb-3">
-                <select
-                  class="form-select form-control"
-                  aria-label=".form-select-lg example"
-                >
-                  <option selected="">Open this select menu</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-                <select
-                  class="form-select form-control"
-                  aria-label=".form-select-lg example"
-                >
-                  <option selected="">Open this select menu</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-                <select
-                  class="form-select form-control"
-                  aria-label=".form-select-lg example"
-                >
-                  <option selected="">Open this select menu</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-                <select
-                  class="form-select form-control"
-                  aria-label=".form-select-lg example"
-                >
-                  <option selected="">Open this select menu</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-                <button
-                  class="btn btn-outline-secondary"
-                  type="button"
-                  id="button-addon2"
-                >
-                  Button
-                </button>
+              <div class="header-selects">
+                <div class="header-select">
+                  <button type="button">Select Vehicle Type <i class="bi bi-caret-down-fill text-green"></i></button>
+                  <div class="header-select-option">
+                    <div class="header-select-option-item"><a href="#">ACURA</a></div>
+                    <div class="header-select-option-item"><a href="#">AMERICAN MOTORS</a></div>
+                    <div class="header-select-option-item"><a href="#">ASTON MARTIN</a></div>
+                    <div class="header-select-option-item"><a href="#">AUDI</a></div>
+                    <div class="header-select-option-item"><a href="#">AUSTIN</a></div>
+                    <div class="header-select-option-item"><a href="#">ALFA ROMEO</a></div>
+                    <a class="header-select-option-link" href="#">All See Brands <i class="bi bi-caret-right-fill text-green"></i></a>
+                  </div>
+                </div>
+                <div class="header-select">
+                  <button type="button">Select Brand <i class="bi bi-caret-down-fill text-green"></i></button>
+                  <div class="header-select-option">
+                    <div class="header-select-option-item"><a href="#">ACURA</a></div>
+                    <div class="header-select-option-item"><a href="#">AMERICAN MOTORS</a></div>
+                    <div class="header-select-option-item"><a href="#">ASTON MARTIN</a></div>
+                    <div class="header-select-option-item"><a href="#">AUDI</a></div>
+                    <div class="header-select-option-item"><a href="#">AUSTIN</a></div>
+                    <div class="header-select-option-item"><a href="#">ALFA ROMEO</a></div>
+                    <a class="header-select-option-link" href="#">All See Brands <i class="bi bi-caret-right-fill text-green"></i></a>
+                  </div>
+                </div>
+                <div class="header-select">
+                  <button type="button">Select Model <i class="bi bi-caret-down-fill text-green"></i></button></button>
+                  <div class="header-select-option">
+                    <div class="header-select-option-item"><a href="#">ACURA</a></div>
+                    <div class="header-select-option-item"><a href="#">AMERICAN MOTORS</a></div>
+                    <div class="header-select-option-item"><a href="#">ASTON MARTIN</a></div>
+                    <div class="header-select-option-item"><a href="#">AUDI</a></div>
+                    <div class="header-select-option-item"><a href="#">AUSTIN</a></div>
+                    <div class="header-select-option-item"><a href="#">ALFA ROMEO</a></div>
+                    <a class="header-select-option-link" href="#">All See Brands <i class="bi bi-caret-right-fill text-green"></i></a>
+                  </div>
+                </div>
+                <div class="header-select">
+                  <button class="border-0" type="button">Select Year<i class="bi bi-caret-down-fill text-green"></i></button>
+                  <div class="header-select-option">
+                    <div class="header-select-option-item"><a href="#">ACURA</a></div>
+                    <div class="header-select-option-item"><a href="#">AMERICAN MOTORS</a></div>
+                    <div class="header-select-option-item"><a href="#">ASTON MARTIN</a></div>
+                    <div class="header-select-option-item"><a href="#">AUDI</a></div>
+                    <div class="header-select-option-item"><a href="#">AUSTIN</a></div>
+                    <div class="header-select-option-item"><a href="#">ALFA ROMEO</a></div>
+                    <a class="header-select-option-link" href="#">All See Brands <i class="bi bi-caret-right-fill text-green"></i></a>
+                  </div>
+                </div>
+                <button class="header-btn"><i class="bi bi-search"></i></button>
               </div>
             </form>
           </div>
